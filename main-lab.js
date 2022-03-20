@@ -1,5 +1,7 @@
 (function () {
 
+    console.log('main lab start');
+
     randomDamage = () => {
         return Math.floor(Math.random() * 11);
     }
@@ -47,5 +49,6 @@
     }
 
     fight('Mac', 'Dennis', 100, 90);
+    console.log('main lab end');
 
 })();

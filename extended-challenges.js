@@ -1,5 +1,7 @@
 (function () {
 
+    console.log('extended challenges start');
+
     function printSquare(width) {
         let row = '';
         for (let i = 0; i < width; i++) {
@@ -10,6 +12,7 @@
         }
     }
 
+    console.log('printing 3x3 square');
     printSquare(3);
 
     function printTriange(width) {
@@ -23,6 +26,7 @@
         }
     }
 
+    console.log('printing triangle with width of 4');
     printTriange(4);
 
     function getGrade(number) {
@@ -41,10 +45,15 @@
         return grade;
     }
 
+    console.log('letter grade for 95/100:');
     console.log(getGrade(95));
+    console.log('letter grade for 80/100:');
     console.log(getGrade(80));
+    console.log('letter grade for 71/100:');
     console.log(getGrade(71));
+    console.log('letter grade for 67/100:');
     console.log(getGrade(67));
+    console.log('letter grade for 40/100:');
     console.log(getGrade(40));
 
     function prioritize(urgent, important) {
@@ -59,9 +68,14 @@
         }
     }
 
+    console.log('priority for urgent and important:');
     console.log(prioritize(true, true));
+    console.log('priority for not urgent but important:');
     console.log(prioritize(false, true));
+    console.log('priority for urgent but not important:');
     console.log(prioritize(true, false));
+    console.log('priority for not urgent and not important:');
     console.log(prioritize(false, false));
+    console.log('extended challenges end');
 
 })();
